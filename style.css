@@ -1,0 +1,111 @@
+/* ===== General Reset ===== */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body{
+  background: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-section {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 30px; 
+  margin-top: 10px; 
+  
+}
+
+.skills-heading {
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.container{
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.skill{
+  width:160px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+
+.outer{
+  height:160px;
+  width:160px;
+  border-radius:50%;
+  padding:20px;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+              -6px -6px 10px 1px rgba(255,255,255,0.7);
+  position: relative;
+}
+
+.inner{
+  height:120px;
+  width:120px;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+              inset -4px -4px 6px 1px rgba(255,255,255,0.7),
+              -0.5px -0.5px 0px rgba(255,255,255,1),
+              0.5px 0.5px 0px rgba(0,0,0,0.15),
+              0px 12px 10px -10px rgba(0,0,0,0.05);
+}
+
+.number{
+  font-weight:bold;
+  font-size:30px;
+  color:black;
+}
+
+/* Labels */
+.label{
+    background-color: #00c6ff;
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  padding: 10px 25px;
+  border-radius: 20px;
+}
+
+/* ===== SVG Circles ===== */
+circle{
+  fill:none;
+  stroke-width:20px;
+  stroke-dasharray:440;
+  stroke-dashoffset:440;
+  stroke-linecap:round;
+  transition: stroke-dashoffset 0.3s linear;
+}
+
+/* Different gradients */
+.circle1{ stroke: url(#grad1); }
+.circle2{ stroke: url(#grad2); }
+.circle3{ stroke: url(#grad3); }
+
+/* Position SVG over circle */
+svg{
+  position:absolute;
+  top:0;
+  left:0;
+}

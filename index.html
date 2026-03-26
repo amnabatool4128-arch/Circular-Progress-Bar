@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3 Circular Progress Bars with Labels</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="skills-section">
+  <h1 class="skills-heading">HTML, CSS & JavaScript Skill Levels</h1>
+
+  <div class="container">
+
+    <!-- Circle 1 -->
+    <div class="skill">
+      <div class="outer">
+        <div class="inner">
+          <div class="number">0%</div>
+        </div>
+        <svg width="160" height="160">
+          <defs>
+            <linearGradient id="grad1">
+              <stop offset="0%" stop-color="#e91e63"/>
+              <stop offset="100%" stop-color="#673ab7"/>
+            </linearGradient>
+          </defs>
+          <circle cx="80" cy="80" r="70" class="circle1"/>
+        </svg>
+      </div>
+      <div class="label">HTML</div>
+    </div>
+
+    <!-- Circle 2 -->
+    <div class="skill">
+      <div class="outer">
+        <div class="inner">
+          <div class="number">0%</div>
+        </div>
+        <svg width="160" height="160">
+          <defs>
+            <linearGradient id="grad2">
+              <stop offset="0%" stop-color="#e91e63"/>
+              <stop offset="100%" stop-color="#673ab7"/>
+            </linearGradient>
+          </defs>
+          <circle cx="80" cy="80" r="70" class="circle2"/>
+        </svg>
+      </div>
+      <div class="label">CSS</div>
+    </div>
+
+    <!-- Circle 3 -->
+    <div class="skill">
+      <div class="outer">
+        <div class="inner">
+          <div class="number">0%</div>
+        </div>
+        <svg width="160" height="160">
+          <defs>
+            <linearGradient id="grad3">
+              <stop offset="0%" stop-color="#e91e63"/>
+              <stop offset="100%" stop-color="#673ab7"/>
+            </linearGradient>
+          </defs>
+          <circle cx="80" cy="80" r="70" class="circle3"/>
+        </svg>
+      </div>
+      <div class="label">JavaScript</div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
