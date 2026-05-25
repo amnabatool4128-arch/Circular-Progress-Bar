@@ -39,7 +39,7 @@ body{
   gap: 60px;
   align-items: flex-start;
   justify-content: center;
-  flex-wrap: wrap; /* Responsive */
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -72,10 +72,7 @@ body{
   justify-content:center;
   align-items:center;
   box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
-              inset -4px -4px 6px 1px rgba(255,255,255,0.7),
-              -0.5px -0.5px 0px rgba(255,255,255,1),
-              0.5px 0.5px 0px rgba(0,0,0,0.15),
-              0px 12px 10px -10px rgba(0,0,0,0.05);
+              inset -4px -4px 6px 1px rgba(255,255,255,0.7);
 }
 
 /* Percentage Number */
@@ -97,7 +94,16 @@ body{
   text-align: center;
 }
 
-/* ===== SVG Circles ===== */
+/* ===== SVG ===== */
+svg{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+/* Circle */
 circle{
   fill:none;
   stroke-width:20px;
@@ -107,23 +113,12 @@ circle{
   transition: stroke-dashoffset 0.3s linear;
 }
 
-/* Different gradients */
+/* Gradients */
 .circle1{ stroke: url(#grad1); }
 .circle2{ stroke: url(#grad2); }
 .circle3{ stroke: url(#grad3); }
 
-/* Position SVG over circle */
-svg{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-}
-
-/* ===== Responsive Design ===== */
-
-/* Tablets */
+/* ===== Responsive ===== */
 @media (max-width: 992px){
   .container{
     gap: 40px;
@@ -153,7 +148,6 @@ svg{
   }
 }
 
-/* Mobile */
 @media (max-width: 600px){
 
   .skills-heading{
@@ -194,26 +188,4 @@ svg{
     stroke-width: 16px;
   }
 }
-}
-
-/* ===== SVG Circles ===== */
-circle{
-  fill:none;
-  stroke-width:20px;
-  stroke-dasharray:440;
-  stroke-dashoffset:440;
-  stroke-linecap:round;
-  transition: stroke-dashoffset 0.3s linear;
-}
-
-/* Different gradients */
-.circle1{ stroke: url(#grad1); }
-.circle2{ stroke: url(#grad2); }
-.circle3{ stroke: url(#grad3); }
-
-/* Position SVG over circle */
-svg{
-  position:absolute;
-  top:0;
-  left:0;
 }
